@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "project1"
+        "project2"
+        "project3"
+        "footer";
+    grid-template-columns: 1fr;
+    gap: 0;
+    background-color: rgb(55, 69, 57); 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    min-height: 100vh;
+}
+.nav-bar {
+    position: sticky;
+    top: 0;
+    background-color: rgb(92, 87, 72);
+    grid-area: nav;
+    border: 3px solid rgb(48, 44, 39);
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;    height: 60px;}
+
+
+.logo {
+    float: left;
+}
+.nav-header {
+    color: rgb(248, 255, 238);
+    font-variant: small-caps;
+    font-size: 40px;
+    margin-left: 10px;
+}
+nav {
+    display: inline;
+}
+
+ul > li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a {
+    color: rgb(248, 255, 238);
+    font-variant: small-caps;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: rgb(184, 161, 144);
+    background-color: rgb(55, 69, 57);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+a:active {
+    color: rgb(255, 222, 200);
+    background-color: rgb(88, 110, 92);
+}
+/* End of Nav Bar */
+
+h1{
+    text-align: center;
+}
+.project-1 {
+    background-color: antiquewhite;
+    grid-area: project1;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-1-image {
+    border: 1px solid black;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.project-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-content h2 {
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.project-1-skills {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.project-1-skills button {
+    padding: 8px 16px;
+    background-color: rgb(92, 87, 72);
+    color: antiquewhite;
+    border: 2px solid rgb(48, 44, 39);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.project-1-skills button:hover {
+    background-color: rgb(55, 69, 57);
+    color: rgb(184, 161, 144);
+}
+
+/* ------------------------------------------ */
+.project-2 {
+    background-color: antiquewhite;
+    grid-area: project2;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-2-image {
+    border: 1px solid black;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.project-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-content h2 {
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.project-2-skills {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.project-2-skills button {
+    padding: 8px 16px;
+    background-color: rgb(92, 87, 72);
+    color: antiquewhite;
+    border: 2px solid rgb(48, 44, 39);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.project-2-skills button:hover {
+    background-color: rgb(55, 69, 57);
+    color: rgb(184, 161, 144);
+}
+/* --------------------- */
+.project-3 {
+    background-color: antiquewhite;
+    grid-area: project3;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-3-image {
+    border: 1px solid black;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.project-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-content h2 {
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.project-3-skills {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.project-3-skills button {
+    padding: 8px 16px;
+    background-color: rgb(92, 87, 72);
+    color: antiquewhite;
+    border: 2px solid rgb(48, 44, 39);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.project-3-skills button:hover {
+    background-color: rgb(55, 69, 57);
+    color: rgb(184, 161, 144);
+}
+/* Start of Footer */
+footer {
+    background-color: rgba(92, 87, 72, 0.467);
+    grid-area: footer;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    border: 3px solid rgb(48, 44, 39);
+}
+
+
+.quick-links h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.quick-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    border-radius: 20%;
+}
+
+.contact-info {
+    margin: 20px 0;
+}
+/* End of Footer */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-1 {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .project-1-image {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .project-1-skills {
+        flex-wrap: wrap;
+    }
+}
